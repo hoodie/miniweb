@@ -1,0 +1,17 @@
+[package]
+authors = ["Hendrik Sollich <hendrik@hoodie.de>"]
+name = "web"
+version = "0.1.0"
+
+[dependencies]
+env_logger = "*"
+iron = "*"
+json = "*"
+log = "*"
+mount = "*"
+router = "*"
+#serde = "*"
+#serde_json = "*"
+#serde_macros = "*"
+staticfile = "*"
+websocket = "*"

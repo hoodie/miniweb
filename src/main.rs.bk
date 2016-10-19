@@ -1,0 +1,18 @@
+extern crate iron;
+
+use iron::prelude::*;
+use iron::status;
+
+fn main() {
+    println!("Hello, world!");
+
+    Iron::new(|req: &mut Request|
+              {
+                  println!("\n{:?}\n\n", req);
+                  let content:String = req.url.path().into_iter().collect();
+
+                  let mut resp = Response::with((status::Ok, content));
+                  Ok(resp)
+              }
+             ).http("localhost:3000").unwrap();
+}
