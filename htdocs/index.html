@@ -1,0 +1,34 @@
+<html>
+
+  <head>
+    <title> Rusty Web Server </title>
+  </head>
+
+  <body>
+
+    <h1> Hello Rust </h1>
+
+    <h2> print my params </h2>
+    <form action="/print_name" method="post">
+      <label for="first_name">first name</label>
+      <input name="first_name"/>
+      <br/>
+      <label for="last_name">last name</label>
+      <input name="last_name"/>
+      <br/>
+      <input type="submit"/>
+    </form>
+
+    <h2> shout my params </h2>
+    <form action="/shout_name" method="post">
+      <label for="first_name">first name</label>
+      <input name="first_name"/>
+      <br/>
+      <label for="last_name">last name</label>
+      <input name="last_name"/>
+      <br/>
+      <input type="submit"/>
+    </form>
+
+  </body>
+</html>
